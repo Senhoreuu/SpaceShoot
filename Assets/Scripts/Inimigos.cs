@@ -3,7 +3,7 @@ using UnityEngine;
 public class Inimigos : MonoBehaviour
 {
     public GameObject laserDoInimigo;
-    public Transform localDoDisparo;
+    public Transform[] locaisDoDisparo;
     public GameObject itemParaDropar;
     public GameObject efeitoDeExplosao;
 
@@ -55,7 +55,11 @@ public class Inimigos : MonoBehaviour
 
         if(tempoAtualDosLasers <= 0)
         {
-            Instantiate(laserDoInimigo, localDoDisparo.position, Quaternion.Euler(0f, 0f, 90f));
+            foreach (var localDoDisparo in locaisDoDisparo)
+            {
+                Instantiate(laserDoInimigo, localDoDisparo.position, Quaternion.Euler(0f, 0f, 90f));
+            }
+            
             tempoAtualDosLasers = tempoMaximoEntreOsLasers;
         }
     }

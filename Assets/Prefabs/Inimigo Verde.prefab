@@ -167,7 +167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserDoInimigo: {fileID: 6383225109060000019, guid: da15a534e7a57fe4086376bbf094ae05, type: 3}
-  localDoDisparo: {fileID: 5676845014159571455}
+  locaisDoDisparo:
+  - {fileID: 5676845014159571455}
   itemParaDropar: {fileID: 1267814531632762107, guid: b0cfc0f9fb195e744afbbad27e1a7494, type: 3}
   efeitoDeExplosao: {fileID: 2867786348973541479, guid: df16680d4a11b6e4a82e2e7c079750be, type: 3}
   velocidadeDoInimigo: 8
