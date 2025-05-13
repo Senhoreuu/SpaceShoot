@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6598350466591710906}
   m_Layer: 0
   m_Name: RT-7_0
-  m_TagString: Boss
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,22 +102,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e05173bcc1fc5b43839735017e9d5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDoInimigo: {fileID: 0}
+  laserDoInimigo: {fileID: 5210619727179685870, guid: 3bc55fed1ecb5d44cbd1b771f68b5217, type: 3}
   locaisDoDisparo:
   - {fileID: 2773500267928408266}
   - {fileID: 267496799948374736}
   itemParaDropar: {fileID: 5043926387999016239, guid: 364bf5686d876f54ba9be73c4d6b43c7, type: 3}
-  efeitoDeExplosao: {fileID: 0}
-  velocidadeDoInimigo: 0
-  vidaMaximaDoInimigo: 0
+  efeitoDeExplosao: {fileID: 2867786348973541479, guid: df16680d4a11b6e4a82e2e7c079750be, type: 3}
+  velocidadeDoInimigo: 15
+  vidaMaximaDoInimigo: 100
   vidaAtualDoInimigo: 0
-  pontosParaDar: 0
+  pontosParaDar: 100
   chanceParaDropar: 0
-  danoDaNave: 0
-  tempoMaximoEntreOsLasers: 0
+  danoDaNave: 6
+  tempoMaximoEntreOsLasers: 0.5
   tempoAtualDosLasers: 0
-  inimigoAtirador: 0
+  inimigoAtirador: 1
   inimigoAtivado: 0
+  isBoss: 1
+  isFinalBoss: 1
 --- !u!1 &3346904751851479738
 GameObject:
   m_ObjectHideFlags: 0

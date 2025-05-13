@@ -19,6 +19,8 @@ public class Inimigos : MonoBehaviour
 
     public bool inimigoAtirador;
     public bool inimigoAtivado;
+    public bool isBoss;
+    public bool isFinalBoss;
 
     // Start is called before the first frame update
     void Start()

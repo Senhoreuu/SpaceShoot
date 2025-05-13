@@ -286,6 +286,8 @@ MonoBehaviour:
   - {fileID: 1836140366115212476, guid: e4b332e86908fd44b9aebe2821163e74, type: 3}
   - {fileID: 1507979078256499672, guid: 0a3a002d9444d534cb8e9571eb51c796, type: 3}
   - {fileID: 3384812671255223465, guid: 5e3e662a3f8277b47880749059aa572e, type: 3}
+  - {fileID: 839473910004463823, guid: 851703d685fa181468859f1ea89258cb, type: 3}
+  - {fileID: 5369358512631852060, guid: cc8299272667a4048a542d909279ed3a, type: 3}
   pontosDeSpawn:
   - {fileID: 1878909682}
   - {fileID: 526276300}
@@ -8633,7 +8635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2131684962
 RectTransform:
   m_ObjectHideFlags: 0

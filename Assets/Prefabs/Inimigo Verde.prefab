@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3384812671255223465}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 2.14, y: 7.59, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -177,10 +177,12 @@ MonoBehaviour:
   pontosParaDar: 3
   chanceParaDropar: 10
   danoDaNave: 2
-  tempoMaximoEntreOsLasers: 0.5
+  tempoMaximoEntreOsLasers: 0.7
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
   inimigoAtivado: 1
+  isBoss: 0
+  isFinalBoss: 0
 --- !u!1 &4523328519990153051
 GameObject:
   m_ObjectHideFlags: 0
