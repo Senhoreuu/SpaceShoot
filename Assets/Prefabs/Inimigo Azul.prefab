@@ -169,18 +169,20 @@ MonoBehaviour:
   laserDoInimigo: {fileID: 462042280663724002, guid: 284ae934149d3af41bed51da08b54e8b, type: 3}
   locaisDoDisparo:
   - {fileID: 823654179173861056}
-  itemParaDropar: {fileID: 8231863961979844443, guid: 4121a925a097a2c41b97461ec758e0dd, type: 3}
+  itemParaDropar: {fileID: 1267814531632762107, guid: b0cfc0f9fb195e744afbbad27e1a7494, type: 3}
   efeitoDeExplosao: {fileID: 2867786348973541479, guid: df16680d4a11b6e4a82e2e7c079750be, type: 3}
   velocidadeDoInimigo: 10
-  vidaMaximaDoInimigo: 4
-  vidaAtualDoInimigo: 100
+  vidaMaximaDoInimigo: 6
+  vidaAtualDoInimigo: 0
   pontosParaDar: 5
   chanceParaDropar: 10
   danoDaNave: 2
   tempoMaximoEntreOsLasers: 1
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
-  inimigoAtivado: 1
+  inimigoAtivado: 0
+  stopMove: 0
+  followPlayer: 0
   isBoss: 0
   isFinalBoss: 0
 --- !u!1 &4666380185367988991

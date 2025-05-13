@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 602876913963701505}
   - component: {fileID: 4078265262657009509}
   - component: {fileID: 987708331954307419}
+  - component: {fileID: 7752355497182435943}
+  - component: {fileID: -5778435011986858037}
   m_Layer: 0
   m_Name: RT-9_0
   m_TagString: Inimigo
@@ -101,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e05173bcc1fc5b43839735017e9d5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDoInimigo: {fileID: 5210619727179685870, guid: 3bc55fed1ecb5d44cbd1b771f68b5217, type: 3}
+  laserDoInimigo: {fileID: 131150890460255023, guid: 057b1353e834b3f4da3c44489c2f19fb, type: 3}
   locaisDoDisparo:
   - {fileID: 6180152342071532877}
   itemParaDropar: {fileID: 5043926387999016239, guid: 364bf5686d876f54ba9be73c4d6b43c7, type: 3}
@@ -110,14 +112,79 @@ MonoBehaviour:
   vidaMaximaDoInimigo: 50
   vidaAtualDoInimigo: 0
   pontosParaDar: 100
-  chanceParaDropar: 0
-  danoDaNave: 4
+  chanceParaDropar: 10
+  danoDaNave: 100
   tempoMaximoEntreOsLasers: 1
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
   inimigoAtivado: 0
+  stopMove: 0
+  followPlayer: 0
   isBoss: 1
   isFinalBoss: 0
+--- !u!58 &7752355497182435943
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5369358512631852060}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5000001
+--- !u!50 &-5778435011986858037
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5369358512631852060}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &9119193516992778237
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,7 +210,7 @@ Transform:
   m_GameObject: {fileID: 9119193516992778237}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

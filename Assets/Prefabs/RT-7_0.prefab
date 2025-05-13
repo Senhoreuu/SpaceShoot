@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2568409001270962311}
   - component: {fileID: 6268415543447939305}
   - component: {fileID: 6598350466591710906}
+  - component: {fileID: 6748536872751365407}
+  - component: {fileID: 2909856384516474950}
   m_Layer: 0
   m_Name: RT-7_0
   m_TagString: Inimigo
@@ -102,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e05173bcc1fc5b43839735017e9d5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserDoInimigo: {fileID: 5210619727179685870, guid: 3bc55fed1ecb5d44cbd1b771f68b5217, type: 3}
+  laserDoInimigo: {fileID: 131150890460255023, guid: 057b1353e834b3f4da3c44489c2f19fb, type: 3}
   locaisDoDisparo:
   - {fileID: 2773500267928408266}
   - {fileID: 267496799948374736}
@@ -112,14 +114,79 @@ MonoBehaviour:
   vidaMaximaDoInimigo: 100
   vidaAtualDoInimigo: 0
   pontosParaDar: 100
-  chanceParaDropar: 0
-  danoDaNave: 6
+  chanceParaDropar: 10
+  danoDaNave: 100
   tempoMaximoEntreOsLasers: 0.5
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
   inimigoAtivado: 0
+  stopMove: 0
+  followPlayer: 0
   isBoss: 1
   isFinalBoss: 1
+--- !u!58 &6748536872751365407
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839473910004463823}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.46875012
+--- !u!50 &2909856384516474950
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839473910004463823}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &3346904751851479738
 GameObject:
   m_ObjectHideFlags: 0

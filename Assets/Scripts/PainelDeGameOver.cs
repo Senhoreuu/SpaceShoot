@@ -12,7 +12,7 @@ public class PainelDeGameOver : MonoBehaviour
 
     public void NextPhase()
     {
-        if (GameManager.instance.isLastPhase())
+        if (GameManager.instance.IsLastPhase())
             GameManager.instance.ShowCredits();
         else
             GameManager.instance.StartHistoryMode(true);

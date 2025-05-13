@@ -1,4 +1,4 @@
- using UnityEngine;
+using UnityEngine;
 
 public class LaserDoJogador : MonoBehaviour
 {
@@ -28,7 +28,8 @@ public class LaserDoJogador : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Inimigo"))
         {
-            other.gameObject.GetComponent<Inimigos>().MachucarInimigo(danoParaDar);
+            Inimigos inimigo = other.gameObject.GetComponent<Inimigos>();
+            inimigo.MachucarInimigo(danoParaDar);
 
             Instantiate(impactoDoLaserDoJogador, transform.position, transform.rotation);
             EfeitosSonoros.instance.somDeImpacto.Play();

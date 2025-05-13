@@ -7,6 +7,10 @@ TagManager:
   - Item
   - Inimigo
   - Boss
+  - Ryder
+  - Comando Central
+  - Boss 1
+  - Boss 2
   layers:
   - Default
   - TransparentFX

@@ -141,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impactoDoLaserDoJogador: {fileID: 3493590005318237956, guid: f86941486d646f148ae202939411906d, type: 3}
   velocidadeDoLaser: 15
-  danoParaDar: 1
+  danoParaDar: 100
 --- !u!114 &829691512586180306
 MonoBehaviour:
   m_ObjectHideFlags: 0

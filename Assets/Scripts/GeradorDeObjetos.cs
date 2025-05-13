@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GeradorDeObjetos : MonoBehaviour
@@ -23,7 +21,7 @@ public class GeradorDeObjetos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameManager.instance.IsGameStarted() || GameManager.instance.IsGamePaused()) return;
+        if (!GameManager.instance.IsGameStarted() || GameManager.instance.IsGamePaused() || GameManager.instance.isBossFight) return;
         
         tempoAtualDosSpawns -= Time.deltaTime;
 
